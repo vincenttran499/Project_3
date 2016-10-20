@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link  rel="stylesheet" href="stylesheet.css">
+    <meta charset="UTF-8">
+    <title>tempConverter</title>
+</head>
+<header>
+    This program converts the temperatures from Celsius to Fahrenheit and vice versa.
+    Apply the temperature into the desired box, you will find the conversion in the corresponding box
+</header>
+<body>
+<article class="a1">
+<h1>Temperature Converter</h1>
+<p class="z1">
+    <label>Insert temperature numbers in:</label>
+</p>
+<p class="z2">
+    <label>Celsius:</label>
+    <input id="celsius" onkeyup="convert('C')">
+    <label>º Celsius</label>
+</p>
+<p class="z3">
+    <label> Is Equal To</label>
+</p>
+<p class="z4">
+    <label>Fahrenheit:</label>
+    <input id="fahrenheit" onkeyup="convert('F')">
+    <label>º Fahrenheit</label>
+</p>
+<p class="z5">
+    <label>Answers will be rounded to the nearest whole number.</label>
+</p>
+</article>
+<img src="img/thermometer.png" height="274" width="71">
+<script>
+    function convert(temperature) {
+        var x;
+        if (temperature == "C") {
+            x = document.getElementById("celsius").value * 9 / 5 + 32;
+            document.getElementById("fahrenheit").value = Math.round(x);
+        } else {
+            x = (document.getElementById("fahrenheit").value - 32) * 5 / 9;
+            document.getElementById("celsius").value = Math.round(x);
+        }
+    }
+
+</script>
+</body>
+</html>
+

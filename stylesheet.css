@@ -1,0 +1,27 @@
+* {
+    margin:0;
+    padding:0;
+}
+header{background: black;}
+h1 {background:#000000;
+    color: #ffffff;}
+html {
+    font: 90%/1.3 arial,sans-serif;
+    padding:1em;
+    background:#000000;
+    margin:0;
+    padding:0;
+    color: #ffffff;
+    background-image: url("img/krakenthingy.jpeg");
+}
+input {
+    background: #ffffff;
+    color: #000000;
+}
+.z1{background:#4b3695;}
+.z2{background:#3771b0;}
+.z3{background:#98c776;}
+.z4{background:#d62580;}
+.z5{background:#dc3256;}
+
+.a1{background:#ffffff}
